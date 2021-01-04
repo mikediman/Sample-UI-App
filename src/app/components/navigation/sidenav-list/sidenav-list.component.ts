@@ -21,6 +21,20 @@ export class SidenavListComponent implements OnInit {
     this.sidenavClose.emit();
   }
 
+  // onClickHome(element: HTMLElement) {
+  //   this.sidenavClose.emit();
+  //   element.scrollIntoView({behavior: "smooth"});
+  // }
+
+  // onClickAbout(element: HTMLElement) {
+  //   this.sidenavClose.emit();
+  //   element.scrollIntoView({behavior: "smooth"});
+  // }
+
+  // onClickContact(element: HTMLElement) {
+  //   element.scrollIntoView({behavior: "smooth"});
+  // }
+
   onClickSignIn() {
     this.sidenavClose.emit();
     this.modalService.open(SignInComponent);

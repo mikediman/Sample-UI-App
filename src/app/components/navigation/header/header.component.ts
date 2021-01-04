@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { Router } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ScrollToService } from 'ng2-scroll-to-el';
 import { SignInComponent } from '../../login/sign-in/sign-in.component';
 import { SignUpComponent } from '../../login/sign-up/sign-up.component';
 
@@ -12,13 +12,25 @@ import { SignUpComponent } from '../../login/sign-up/sign-up.component';
 export class HeaderComponent implements OnInit {
   @Output() public sidenavToggle = new EventEmitter();
 
-  constructor(private modalService: NgbModal, private router: Router) {}
+  constructor(private modalService: NgbModal, private scrollService: ScrollToService) {}
 
   ngOnInit(): void {
   }
 
   public onToggleSidenav = () => {
     this.sidenavToggle.emit();
+  }
+
+  onClickHome(element: HTMLElement) {
+    element.scrollIntoView({behavior: "smooth"});
+  }
+
+  onClickAbout(element: HTMLElement) {
+    element.scrollIntoView({behavior: "smooth"});
+  }
+
+  onClickContact(element: HTMLElement) {
+    element.scrollIntoView({behavior: "smooth"});
   }
 
   onClickSignIn() {

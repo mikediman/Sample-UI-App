@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { ScrollToModule } from 'ng2-scroll-to-el';
 
 import { AppRoutingModule } from './app-routing.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -42,6 +42,7 @@ import { SidenavListComponent } from './components/navigation/sidenav-list/siden
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    ScrollToModule.forRoot(),
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatSidenavModule,
