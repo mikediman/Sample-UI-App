@@ -1,0 +1,26 @@
+.masthead {
+    height: 85vh;
+    min-height: 500px;
+    background-color: teal;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .masthead-img {
+    width: 23rem;
+    margin-top: 0.5rem;
+  }
+  
+  .font-weight-light {
+    font-size: 4rem;
+    font-family: Verdana, Helvetica, sans-serif;
+    line-height: 2.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .lead {
+    font-size: 2rem;
+    font-family: Verdana, Helvetica, sans-serif;
+  }

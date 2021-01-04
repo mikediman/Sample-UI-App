@@ -1,0 +1,48 @@
+.page-section {
+    height: 55vh;
+    min-height: 500px;
+    background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section-heading {
+    padding: 1rem 0;
+}
+
+.page-section-heading {
+    font-size: 4rem;
+    font-family: Verdana, Helvetica, sans-serif;
+    color: black;
+}
+
+.row {
+    display: flex;
+    margin-right: -1.5rem;
+    margin-left: -1.5rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.col-lg-4 {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.lead {
+    font-size: 1.5rem;
+    font-family: Verdana, Helvetica, sans-serif;
+    color: black;
+}
+
+.hyperLink {
+    cursor:pointer;
+    border: none;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,19 @@
+<div class="navigation-bar">
+    <mat-toolbar>
+        <div fxHide.gt-xs>
+            <button mat-icon-button (click)="onToggleSidenav()">
+                <mat-icon [ngStyle]="{'color':'white'}">menu</mat-icon>
+            </button>
+        </div>
+        <div><a href="/">Eco</a></div>
+        <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+            <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+                <li><a routerLink="/home">Home</a></li>
+                <li><a routerLink="/about">About</a></li>
+                <li><a routerLink="/contact">Contact</a></li>
+                <li><a routerLink="/sign-in" (click)="onClickSignIn()">Sign In</a></li>
+                <li><a routerLink="/sign-up" (click)="onClickSignUp()">Sign Up</a></li>
+            </ul>
+        </div>
+    </mat-toolbar>
+</div>

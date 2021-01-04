@@ -1,0 +1,17 @@
+<div class="modal-signup">
+    <div class="modal-header">
+      <h4 class="modal-title">Create your Account</h4>
+      <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="cancelSignUp()">{{ btnCloseText }}</button>
+    </div>
+    <div class="modal-body">
+      <label for="email"><b>Email*</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required maxlength="50">
+      <label for="username"><b>Username*</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required maxlength="20">
+      <label for="passworf"><b>Password*</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required maxlength="50">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="SignUp()">Create Account</button>  
+    </div>
+</div>
