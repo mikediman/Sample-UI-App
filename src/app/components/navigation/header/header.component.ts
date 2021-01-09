@@ -12,7 +12,7 @@ import { SignUpComponent } from '../../login/sign-up/sign-up.component';
 export class HeaderComponent implements OnInit {
   @Output() public sidenavToggle = new EventEmitter();
 
-  constructor(private modalService: NgbModal, private scrollService: ScrollToService) {}
+  constructor(private modalService: NgbModal) {}
 
   ngOnInit(): void {
   }

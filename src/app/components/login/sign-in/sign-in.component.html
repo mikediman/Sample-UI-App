@@ -6,10 +6,13 @@
     <div class="modal-body">
       <label for="email"><b>Email</b></label>
       <input type="text" placeholder="Enter Email" name="email" required maxlength="150" minlength="5">
-      <label for="passworf"><b>Password</b></label>
+      <label for="password"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required maxlength="50">
+      <div class="forgot-password">
+        <a routerLink="/password-reset" (click)="onPasswordReset()"><p>Forgot password?</p></a>
+      </div>      
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-outline-dark" (click)="SignIn()">Sign In</button>  
     </div>
-  </div>
+</div>

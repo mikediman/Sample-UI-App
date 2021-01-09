@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SignInComponent } from '../sign-in/sign-in.component';
 
 @Component({
   selector: 'app-sign-up',
@@ -12,7 +13,7 @@ export class SignUpComponent implements OnInit {
   @Input() public btnCloseText: string = 'x';
   private signupMsg: string;
 
-  constructor(private activeModal: NgbActiveModal, private router: Router) { }
+  constructor(private activeModal: NgbActiveModal, private router: Router, private modalService: NgbModal) { }
 
   ngOnInit(): void {
   }
@@ -29,6 +30,11 @@ export class SignUpComponent implements OnInit {
   cancelSignUp() {
     this.closeModal();
     this.router.navigate(['/']);
-  }  
+  }
+
+  onSignIn() {
+    this.closeModal();
+    this.modalService.open(SignInComponent);
+  }
 
 }

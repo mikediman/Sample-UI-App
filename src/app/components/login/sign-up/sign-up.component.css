@@ -6,3 +6,9 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
+.have-account {
+    padding-left: 1px;
+    margin-top: 0rem;
+    cursor: pointer;
+}

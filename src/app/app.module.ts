@@ -24,6 +24,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SubfooterComponent } from './components/footer/subfooter/subfooter.component';
 import { SidenavListComponent } from './components/navigation/sidenav-list/sidenav-list.component';
+import { PasswordResetComponent } from './components/login/sign-in/password-reset/password-reset.component';
+import { ChangeComponentService } from './services/changeComponent.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { SidenavListComponent } from './components/navigation/sidenav-list/siden
     ContactComponent,
     FooterComponent,
     SubfooterComponent,
-    SidenavListComponent
+    SidenavListComponent,
+    PasswordResetComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +56,9 @@ import { SidenavListComponent } from './components/navigation/sidenav-list/siden
     MatDividerModule,
     MatListModule
   ],
-  providers: [],
+  providers: [
+    ChangeComponentService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

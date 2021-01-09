@@ -3,6 +3,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { AboutComponent } from "./components/about/about.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { HomeComponent } from "./components/home/home.component";
+import { PasswordResetComponent } from "./components/login/sign-in/password-reset/password-reset.component";
 import { SignInComponent } from "./components/login/sign-in/sign-in.component";
 import { SignUpComponent } from "./components/login/sign-up/sign-up.component";
 
@@ -12,7 +13,8 @@ const appRoutes: Routes = [
     { path: 'sign-in', component: SignInComponent },
     { path: 'sign-up', component: SignUpComponent },
     { path: 'about', component: AboutComponent },
-    { path: 'contact', component: ContactComponent }
+    { path: 'contact', component: ContactComponent },
+    { path: 'password-reset', component: PasswordResetComponent }
 ];
 
 @NgModule({

@@ -1,6 +1,7 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, OnInit, Output, TemplateRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { AboutComponent } from '../../about/about.component';
 import { SignInComponent } from '../../login/sign-in/sign-in.component';
 import { SignUpComponent } from '../../login/sign-up/sign-up.component';
 
@@ -11,7 +12,7 @@ import { SignUpComponent } from '../../login/sign-up/sign-up.component';
 })
 export class SidenavListComponent implements OnInit {
   @Output() sidenavClose = new EventEmitter();
-
+  @ViewChild (AboutComponent, { static: true }) getRefFromHeader : AboutComponent;
   constructor(private modalService: NgbModal, private router: Router) {}
 
   ngOnInit(): void {
@@ -26,10 +27,11 @@ export class SidenavListComponent implements OnInit {
   //   element.scrollIntoView({behavior: "smooth"});
   // }
 
-  // onClickAbout(element: HTMLElement) {
-  //   this.sidenavClose.emit();
-  //   element.scrollIntoView({behavior: "smooth"});
-  // }
+  onClickAbout() {
+    this.sidenavClose.emit();
+    //this.getRefFromHeader.scrollIntoView({behavior: "smooth"});
+    //console.log(this.getRefFromHeader);    
+  }
 
   // onClickContact(element: HTMLElement) {
   //   element.scrollIntoView({behavior: "smooth"});

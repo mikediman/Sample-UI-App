@@ -1,8 +1,11 @@
-<mat-sidenav-container>
+<mat-sidenav-container *ngIf="!changeComp.changeComponent">
     <mat-sidenav #sidenav role="navigation">
         <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
     </mat-sidenav>
     <mat-sidenav-content>
-        <app-header (sidenavToggle)="sidenav.toggle()"></app-header>        
-    </mat-sidenav-content>
+        <app-header (sidenavToggle)="sidenav.toggle()"></app-header>                
+    </mat-sidenav-content>    
 </mat-sidenav-container>
+<div>
+    <app-password-reset *ngIf="changeComp.changeComponent"></app-password-reset>
+</div>

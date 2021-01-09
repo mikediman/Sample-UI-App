@@ -6,11 +6,14 @@
     <div class="modal-body">
       <label for="email"><b>Email*</b></label>
       <input type="text" placeholder="Enter Email" name="email" required maxlength="50">
-      <label for="username"><b>Username*</b></label>
-      <input type="text" placeholder="Enter Username" name="username" required maxlength="20">
-      <label for="passworf"><b>Password*</b></label>
+      <label for="password"><b>Password*</b></label>
       <input type="password" placeholder="Enter Password" name="password" required maxlength="50">
-    </div>
+      <label for="re-password"><b>Re-Password*</b></label>
+      <input type="password" placeholder="Re-enter Password" name="re-password" required maxlength="50">
+      <div class="have-account">
+        <a routerLink="/sign-in" (click)="onSignIn()"><p>Have an account? Sign In</p></a>
+      </div>
+    </div>   
     <div class="modal-footer">
       <button type="button" class="btn btn-outline-dark" (click)="SignUp()">Create Account</button>  
     </div>
